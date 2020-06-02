@@ -112,7 +112,7 @@ long LinuxParser::Jiffies() {
   string word;
   string line;
   long jiffies = 0;
-  long jiffies2 = 0;
+  // long jiffies2 = 0;
   vector<string> vec;
   std::ifstream file(kProcDirectory + kStatFilename);
   if (file.is_open()) {
@@ -121,11 +121,11 @@ long LinuxParser::Jiffies() {
     while( linestream >> word) {
       vec.push_back(word);
     }
-    for(int i = 1; i < vec.size(); i++){
+    for(size_t i = 1; i < vec.size(); i++){
       jiffies += stol(vec[i]);
     }
   }
-  jiffies2 = LinuxParser::UpTime() *  sysconf(_SC_CLK_TCK);
+  // jiffies2 = LinuxParser::UpTime() *  sysconf(_SC_CLK_TCK);
 
   return jiffies;
 }
