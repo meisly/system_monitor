@@ -3,7 +3,7 @@
 Starter code for System Monitor Project was obtained from the Object Oriented Programming Course of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). 
 
 
-![System Monitor](images/monitor.png)
+![System Monitor](images/VirtualBoxVM_kZatAy2Fv5.png)
 
 
 ## Dependencies
@@ -26,5 +26,5 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 2. Build the project: `make build`
 
 3. Run the resulting executable: `./build/monitor`
-![Starting System Monitor](images/starting_monitor.png)
+![Starting System Monitor](images/VirtualBoxVM_kZatAy2Fv5.png)
 
